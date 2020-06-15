@@ -1,0 +1,44 @@
+{
+  "name": "covid-data",
+  "version": "1.0.0",
+  "description": "view covid data",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "watch": "parcel watch ./src/index.js",
+    "build": "parcel build ./src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/abhinav.gurung1/covid-data.git"
+  },
+  "keywords": [
+    "react",
+    "covid",
+    "parcel"
+  ],
+  "author": "abhinav gurung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/abhinav.gurung1/covid-data/issues"
+  },
+  "homepage": "https://gitlab.com/abhinav.gurung1/covid-data#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.10.2",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.10.0",
+    "dotenv": "^8.2.0",
+    "moment": "^2.26.0",
+    "parcel-bundler": "^1.12.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
+  }
+}
