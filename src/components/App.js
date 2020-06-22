@@ -1,9 +1,17 @@
 import React from 'react'
+import Main from './Main'
+import Header from './Header'
+// import Footer from './Footer'
+
+
 
 const App = () => {
 	return (
 		<div>
-			<p>This is app</p>
+			<Header />
+			<br/><br/>
+			<Main />
+			{/* <Footer /> */}
 		</div>
 	);
 }
