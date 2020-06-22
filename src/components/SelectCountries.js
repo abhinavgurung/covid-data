@@ -18,11 +18,11 @@ const SelectCountries = ({ handleCountryChange}) => {
 		};
 
 		fetchCountires();
-		console.log('inside useeffect selectcountries');
+	
 	}, []);
 
 	const getCountries = async () => {
-		console.log('inside get countries');
+		
 		const result = await axios.get('https://covid19.mathdro.id/api/countries');
 		const array = result.data.countries;
 		return array.map((element) => element.name);
