@@ -1,10 +1,15 @@
 image: node:latest
 
+cache:
+  paths:
+    - node_modules
 pages:
   stage: deploy
   script:
   - npm install
   - npm run build
+  - mv public _public
+  - mv build public
   artifacts:
     paths:
     - public

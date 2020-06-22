@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "view covid data",
   "main": "index.js",
+  "homepage": "https://https://abhinav.gurung1.gitlab.io/covid-data/",
   "scripts": {
     "dev": "parcel ./src/index.html",
     "watch": "parcel watch ./src/index.js",
@@ -23,7 +24,6 @@
   "bugs": {
     "url": "https://gitlab.com/abhinav.gurung1/covid-data/issues"
   },
-  "homepage": "https://gitlab.com/abhinav.gurung1/covid-data#readme",
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
