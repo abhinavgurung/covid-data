@@ -1,9 +1,16 @@
 import React from 'react'
 import { Jumbotron, Container } from 'reactstrap';
 
+const footerStyle = {
+	position: "absolute",
+  bottom: 0,
+  width: "100%",
+  height: "2.5rem",
+};
+
 const Footer = () => {
 	return (
-		<div>
+		<div style={footerStyle}>
 		<Jumbotron fluid>
 			<Container fluid>
 				

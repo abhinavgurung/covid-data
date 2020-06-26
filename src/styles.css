@@ -1,25 +1,30 @@
-.container
-{
-  margin:30px;
-  display:flex;
-  flex-direction:row;
-  width:300px;
-  height:300px;
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: inherit;
 }
 
-.container > div
-{
-  flex:1 1 auto;
-  border:5px lightblue solid;
-  text-align:center;
-	margin:10px;  
-	
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  font: green;
+  float: left;
+  width: 25%;
+  color: #171e42;
+  padding: 10px;
 }
 
 body{
-	background-color: #b97446;
+  background-color: #b97446;
+  font-family: 'Nunito', sans-serif;
 }
 
 h3{
 	text-align: center;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');

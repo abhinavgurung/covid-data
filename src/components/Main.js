@@ -30,7 +30,7 @@ const Main = () => {
 	
 	
 	const handleCountryChange = (country) => {
-		console.log('main handlecange');
+		
 		setCountry(country);
 	};
 
