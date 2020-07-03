@@ -1,18 +1,18 @@
-import React from 'react'
-import Main from './Main'
-import Header from './Header'
-import Footer from './Footer'
+import React from 'react';
+import Main from './Main';
+import Header from './Header';
+// import Footer from './Footer';
+
 
 
 
 const App = () => {
 	return (
-		<div>
-			<Header />
-			<br/><br/>
+		<>
+			<Header /><br/>
 			<Main />
 			{/* <Footer /> */}
-		</div>
+		</>
 	);
 }
 

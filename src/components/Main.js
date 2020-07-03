@@ -1,6 +1,6 @@
 import React, { useState, useEffect}  from 'react'
 import SelectCountries from './SelectCountries';
-
+import Details from './Details';
 import axios from 'axios';
 import Result from './Results';
 import 'babel-polyfill';
@@ -11,17 +11,18 @@ const Main = () => {
 
 	const [country, setCountry] = useState('Global');
 	const [data, setData] = useState(null);
-	let url = 'https://covid19.mathdro.id/api';
 
-	
-
-	useEffect( () => {
-		if (country !== 'Global') {
-			url = 'https://covid19.mathdro.id/api/countries/'+country
-		}
+	const globalUrl = 'https://covid19.mathdro.id/api/';
+	const url = 'https://covid19.mathdro.id/api/countries/' + country;
+	useEffect(() => {
 		
 		async function fetchData() {
-			const result = await axios(url);
+			let result = null;
+			if (country === 'Global') {
+				result = await axios(globalUrl);
+			} else {
+				result = await axios(url);
+			}
 			setData(result.data);
 		};
 		
@@ -30,20 +31,15 @@ const Main = () => {
 	
 	
 	const handleCountryChange = (country) => {
-		
-		setCountry(country);
+		{ country ? setCountry(country) : setCountry('Global') }
 	};
 
 	return (
 		<div className="main">
 			<SelectCountries handleCountryChange={handleCountryChange}/><br/><br/>
-			{
-				
-				(data && <Result data={data} country={country}/>)
-			}
+			{ (data && <Result data={data} country={country}/>) }
+			<Details country={country}/>
 		</div>
-			
-
 	);
 };
 

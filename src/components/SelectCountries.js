@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const inputStyle = {
 	display: "flex",
-	justifyContent: "center",
+	justifyContent: "left",
 	alignItems: "center"
 };
 
