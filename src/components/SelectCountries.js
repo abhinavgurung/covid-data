@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NativeSelect, FormControl } from '@material-ui/core';
+import { NativeSelect, FormControl,FormHelperText } from '@material-ui/core';
 import axios from 'axios';
 
 const inputStyle = {
@@ -29,10 +29,12 @@ const SelectCountries = ({ handleCountryChange}) => {
 	};
 	return (
 		<FormControl style={inputStyle}>
-      <NativeSelect defaultValue="" onChange={(e) => handleCountryChange(e.target.value)}>
+			<NativeSelect defaultValue="" onChange={(e) => handleCountryChange(e.target.value)}>
+				<option value=""></option>
         <option value="">Global</option>
         {countries.map((country, i) => <option key={i} value={country}>{country}</option>)}
-      </NativeSelect>
+			</NativeSelect>
+			<FormHelperText>Select Country to view Data</FormHelperText>
     </FormControl>
 	);
 };

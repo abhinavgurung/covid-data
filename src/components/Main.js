@@ -9,7 +9,7 @@ import 'babel-polyfill';
 
 const Main = () => {
 
-	const [country, setCountry] = useState('Global');
+	const [country, setCountry] = useState('Canada');
 	const [data, setData] = useState(null);
 
 	const globalUrl = 'https://covid19.mathdro.id/api/';
